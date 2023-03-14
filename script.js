@@ -1,26 +1,26 @@
 
+/*
 function executarTudo(){
     alterarCorCaixa()
     alterarCorBorda()
     alterarDisplayOff()
     alterarDisplayOn()
 }
-
-/* Deixei aqui uma ideia diferente de fazer, mas não deu certo.
-
+*/
+// Coloquei com esta versão, agora funcionando.
 function executarTudo() {
     let atributo = ["backgroundColor", "borderColor", "display", "display"]
     let caracteristica = ["red", "pink", "none", "block"]
     for (let i = 0; i < 4; i++) {
         let k = i + 1
-        let elemento = document.getElementById("boxModel0" + `${k}`)
+        let elemento = document.getElementById("boxModel0" + k)
         console.log(elemento)
-        elemento.style.atributo[i] = caracteristica[i]
-       
+        elemento.style[atributo[i]] = caracteristica[i]
     }
 }
-*/
 
+
+/*
 function alterarCorCaixa() {
     const elementoCaixa = document.getElementById("boxModel01")
     elementoCaixa.style.backgroundColor = "red"
@@ -40,3 +40,4 @@ function alterarDisplayOn() {
     const elementoDisplay = document.getElementById("boxModel04")
     elementoDisplay.style.display = "block"
 }
+*/
